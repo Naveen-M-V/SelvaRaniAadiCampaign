@@ -364,7 +364,7 @@
         const totalGeneral = 14;
         const branchName = 'General';
         for (let i = 1; i <= totalGeneral; i++) {
-          const imgSrc = `public/general/${i}.jpg`;
+          const imgSrc = `media/general/${i}.jpg`;
           html += createOfferCard(imgSrc, branchName, i, 'object-contain');
         }
       } else if (branch === 'alangulam') {
@@ -372,7 +372,7 @@
         const branchName = 'Alangulam';
         for (let i = 1; i <= totalAlangulam; i++) {
           const paddedIdx = padZero(i);
-          const imgSrc = `public/Alangulam/Alangulam%201080%20x%201350%20pix/S1%201080%20X%201350-${paddedIdx}.jpg`;
+          const imgSrc = `media/Alangulam/Alangulam%201080%20x%201350%20pix/S1%201080%20X%201350-${paddedIdx}.jpg`;
           html += createOfferCard(imgSrc, branchName, paddedIdx, 'object-cover');
         }
       } else if (branch === 'tenkasi') {
@@ -380,7 +380,7 @@
         const branchName = 'Tenkasi';
         for (let i = 1; i <= totalTenkasi; i++) {
           const paddedIdx = padZero(i);
-          const imgSrc = `public/Tenkasi/Tenkasi%201080%20x%201350%20pix/S2%201080%20X%201350-${paddedIdx}.jpg`;
+          const imgSrc = `media/Tenkasi/Tenkasi%201080%20x%201350%20pix/S2%201080%20X%201350-${paddedIdx}.jpg`;
           html += createOfferCard(imgSrc, branchName, paddedIdx, 'object-cover');
         }
       } else if (branch === 'thirunelveli') {
@@ -389,7 +389,7 @@
         for (let i = 1; i <= totalThirunelveli; i++) {
           if (i === 30) continue; // Skip missing file S3 1080 X 1350-30.jpg
           const paddedIdx = padZero(i);
-          const imgSrc = `public/thirunelveli/WEB%20S3%201080%20X%201350%20PIX/S3%201080%20X%201350-${paddedIdx}.jpg`;
+          const imgSrc = `media/thirunelveli/WEB%20S3%201080%20X%201350%20PIX/S3%201080%20X%201350-${paddedIdx}.jpg`;
           html += createOfferCard(imgSrc, branchName, paddedIdx, 'object-cover');
         }
       }
